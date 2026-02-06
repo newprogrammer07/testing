@@ -6,7 +6,15 @@ import { Button } from './components/Button';
 import { NETWORKS, WALLETS } from './constants';
 import { ConnectionStatus, Network, ConnectState } from './types';
 //  hello my name is ashutosh nayak
-
+export default function App() {
+  // Application State
+  const [selectedNetwork, setSelectedNetwork] = useState<Network>(NETWORKS[0]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [connectState, setConnectState] = useState<ConnectState>({
+    status: ConnectionStatus.DISCONNECTED,
+    walletId: null,
+    address: null,
+  });
 
   // Mock Connect Handler
   const handleConnectWallet = (walletId: string) => {
