@@ -1,7 +1,3 @@
-// hello i am ashutosh
-
-
-
 import React, { useState, useEffect } from 'react';
 import { Wallet, LogOut, LayoutGrid, Zap, ShieldCheck } from 'lucide-react';
 import { NetworkSelector } from './components/NetworkSelector';
@@ -9,7 +5,7 @@ import { WalletModal } from './components/WalletModal';
 import { Button } from './components/Button';
 import { NETWORKS, WALLETS } from './constants';
 import { ConnectionStatus, Network, ConnectState } from './types';
-
+//  hello my name is ayutayam sutar 
 export default function App() {
   // Application State
   const [selectedNetwork, setSelectedNetwork] = useState<Network>(NETWORKS[0]);
