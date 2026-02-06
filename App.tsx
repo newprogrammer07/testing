@@ -11,9 +11,7 @@ export default function App() {
   const [selectedNetwork, setSelectedNetwork] = useState<Network>(NETWORKS[0]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [connectState, setConnectState] = useState<ConnectState>({
-    status: ConnectionStatus.DISCONNECTED,
-    walletId: null,
-    address: null,
+    
   });
 
   // Mock Connect Handler
